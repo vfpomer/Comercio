@@ -1,0 +1,115 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del sitio */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Encabezado y pie de página */
+header, footer {
+    background-color: #2c3e50;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+/* Encabezado */
+header h2, header h4, footer h4 {
+    margin: 0;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #34495e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+/* Elementos de la barra de navegación */
+nav div {
+    background-color: #e74c3c;
+    border-radius: 5px;
+    width: 120px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Cambio de color al pasar el ratón por encima */
+nav div:hover {
+    background-color: #c0392b;
+}
+
+nav div img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Título de la página */
+h3 {
+    text-align: center;
+    color: #2980b9;
+    margin-top: 20px;
+}
+
+/* Contenedor de los productos */
+.divArticulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Producto individual */
+.divArticulos div {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+    width: 250px;
+}
+
+/* Efecto de crecimiento al pasar el ratón por encima */
+.divArticulos div:hover {
+    transform: scale(1.05);
+}
+
+/* Botón de añadir al carrito */
+.btnAnadir {
+    background-color: #27ae60;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+/* Cambio de color al pasar el ratón por encima */
+.btnAnadir:hover {
+    background-color: #1e8449;
+}
+
+/* Carrito de compras */
+.divCarro
